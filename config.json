@@ -1,3 +1,5 @@
 {
-    "FilesPath": "C:\\TEMP"
+    "FilesPath": "C:\\TEMP",
+    "OutPath": "C:\\TEMP\\Out",
+    "FFMPegDir": "C:\\Users\\administrator\\Downloads\\ffmpeg-20200115-0dc0837-win64-static\\ffmpeg-20200115-0dc0837-win64-static\\bin"
 }

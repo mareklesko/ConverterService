@@ -39,10 +39,10 @@ namespace ConverterService
                     services.AddSingleton(s =>
                     {
                         var log = s.GetRequiredService<ILogger<FileWatcherService>>();
-                        return new FileWatcherService(Path.GetFullPath(configuration["FilesPath"]), "*.txt", log);
+                        return new FileWatcherService(Path.GetFullPath(configuration["FilesPath"]), "*.mp4", log);
                     });
 
-                    services.AddSingleton(s => new FileProcessor());
+                    services.AddSingleton(s => new FileProcessor(configuration["FFMPegDir"], configuration["OutPath"]));
 
                     services.AddSingleton<IHostedService>(s =>
                     {
